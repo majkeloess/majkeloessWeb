@@ -27,52 +27,56 @@ function Home() {
   const BackgroundConditon = darkMode ? "black" : "white";
   return (
     <div className={`${darkMode && "dark"}`}>
-      <div className="light text-neutral-700 text-opacity-90">
-        <button onClick={changeMode} className="absolute top-10 right-10">
-          {darkMode ? <Sun size='50px'/> : <Moon  size='50px' />}
-        </button>
-        <div className="flex justify-center">
+      <div className="light text-neutral-600 text-opacity-90">
+        <div className="flex justify-center py-8">
         <div className="grid grid-cols-3 grid-rows-6 gap-10 max-w-[1000px] jus ">
           <div className="box col-span-3 row-span-3">
+          <button onClick={changeMode} className="absolute top-10 right-10">
+          {darkMode ? <Sun size='50px'/> : <Moon  size='50px' />}
+        </button>
             <div>
             <p className="text-3xl mb-4">Hi, I am </p>
             <h1 className="font-medium text-9xl mb-10">majkeloess</h1>
             <p className="text-3xl mb-4 leading-10">
               I'm a Computer Science student with a passion for{" "}
-              <span className="dark:bg-neutral-100 dark:text-neutral-700 bg-neutral-700 text-neutral-100 text-4xl">
+              <span className="text-square">
                 webDevelopment
               </span>
               . To know more about me, check out the{" "}
               <Link
-                className="dark:bg-neutral-100 dark:text-neutral-700 text-3xl bg-neutral-700 text-neutral-100"
+                className="text-square"
                 to="/about"
               >
                 whoami
               </Link>
               . I have already completed several{" "}
               <Link
-                className="dark:bg-neutral-100 dark:text-neutral-700 text-3xl bg-neutral-700 text-neutral-100"
+                className="text-square"
                 to="/projects"
               >
-                projects.
+                projects
               </Link>
+              .
             </p>
             </div>
           </div>
-          <div className="box">
+          <div className="box text-7xl font-medium">
             about
           </div>
-          <div className="box col-span-2 row-span-2">
-            I am currently pursuing a degree in Computer Science at AGH
-            University of Science and Technology. At the university, I am
+          <div className="box col-span-2 row-span-2 text-2xl font-">
+            <p>
+            I am currently a student at <span className="text-square">AGH</span> University of Science and Technology. At the university, I am
             focusing on technologies such as C/C++. About half a year ago, I
             ventured into web development, delving into technologies like HTML,
             CSS, Tailwind CSS, JavaScript, and React. Presently, I am expanding
             my skills by learning TypeScript, Node.js, and Express
+            </p>
           </div>
-          <div className="box row-span-2"></div>
+          <div className="box row-span-2">
+          <Cube />
+          </div>
           <div className="box col-span-2">
-            <ul className="flex flex-row">
+            <ul className="flex flex-row gap-3">
               <li>
                 <Html color={ListConditon}  size='50px'  />
               </li>
@@ -103,18 +107,19 @@ function Home() {
             </ul>
           </div>
           <div className="box col-span-2">
-            I enjoy engaging in sports. In my younger years, I played football,
-            and my favorite club is Manchester United (no joke). Currently, my
-            passion lies in running and working out at the gym. This year, I
-            accomplished an ultramarathon (58km with elevations of 1300m). In
-            the upcoming year, I plan to challenge myself and attempt to surpass
-            my previous records. Additionally, during the winter, I indulge in
-            skiing.
+            <p className="text-2xl">
+              I enjoy engaging in sports. In my younger years, I played football,
+              and my favorite club is Manchester United (no joke). Currently, my
+              passion lies in running and working out at the gym. This year, I
+              accomplished an ultramarathon (58km with elevations of 1300m). In
+              the upcoming year, I plan to challenge myself and attempt to surpass
+              my previous records. Additionally, during the winter, I indulge in
+              skiing.
+            </p>
           </div>
-          <div className="box row-span-2"></div>
+          <div className="box row-span-2 bg-[url('src/img/sigma.jpg')] bg-cover"></div>
           <div className="box row-span-2">
             {" "}
-            <Cube />{" "}
           </div>
           <div className="box row-span-2">
             {" "}
@@ -132,7 +137,7 @@ function Home() {
               </li>
             </ul>
           </div>
-          <div className="box"></div>
+          <div className="box text-7xl font-medium">projects</div>
           <div className="box col-span-2"></div>
           <div className="box col-span-2"></div>
           <div className="box row-span-2"></div>

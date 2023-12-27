@@ -1,13 +1,14 @@
 import React, { useRef } from "react";
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import { TextureLoader } from "three/src/loaders/TextureLoader";
+import { OrbitControls } from "@react-three/drei";
 
 export default function index() {
   return (
     <div className="w-[300px] h-[300px]">
       <Canvas >
-        <ambientLight intensity={1} />
-        {/* <             OrbitControls enableZoom={false} enablePan={false}/> */}
+        <ambientLight intensity={1.5} />
+        <OrbitControls enableZoom={false} enablePan={false}/>
         <directionalLight position={[2, 1, 1]} />
 
         <Cube  />
