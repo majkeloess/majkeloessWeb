@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+.light {
+  @apply bg-gradient-to-tr from-white via-sky-100 to-blue-400;
+}
+
+.notlight {
+  @apply bg-gradient-to-bl from-black via-indigo-900 to-fuchsia-900;
+}
+
+.box {
+  @apply bg-opacity-25 bg-white bg-clip-padding backdrop-filter backdrop-blur-md p-10 flex justify-center items-center rounded-2xl shadow-xl min-w-[300px] min-h-[150px] gap-2;
+}
