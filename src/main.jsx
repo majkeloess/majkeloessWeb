@@ -4,7 +4,6 @@ import "./styles/index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./components/ErrorPage";
 import Home from "./components/Home.jsx";
-import Projects from "./components/Projects.jsx";
 import About from "./components/About.jsx";
 
 function App() {
@@ -17,10 +16,6 @@ function App() {
     {
       path: "/about",
       element: <About />,
-    },
-    {
-      path: "/projects",
-      element: <Projects />,
     },
   ]);
 

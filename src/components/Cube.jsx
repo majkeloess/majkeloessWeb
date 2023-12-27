@@ -6,12 +6,12 @@ import { OrbitControls } from "@react-three/drei";
 export default function index() {
   return (
     <div className="w-[300px] h-[300px]">
-      <Canvas >
+      <Canvas>
         <ambientLight intensity={1.5} />
-        <OrbitControls enableZoom={false} enablePan={false}/>
+        <OrbitControls enableZoom={false} enablePan={false} />
         <directionalLight position={[2, 1, 1]} />
 
-        <Cube  />
+        <Cube />
       </Canvas>
     </div>
   );
