@@ -2,6 +2,7 @@ export default function Instagram(prop) {
   return (
     <a target="_blank" href="https://www.instagram.com/majkeloess/">
       <svg 
+        className="animedia"
         fill={prop.color}
         xmlns="http://www.w3.org/2000/svg"
         width={prop.size}

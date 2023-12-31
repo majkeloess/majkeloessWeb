@@ -2,6 +2,7 @@ export default function Github(prop) {
   return (
     <a target="_blank" href="https://github.com/majkeloess">
       <svg
+        className="animedia"
         fill={prop.color}
         xmlns="http://www.w3.org/2000/svg"
         width={prop.size}

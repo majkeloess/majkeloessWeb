@@ -13,17 +13,22 @@
 }
 
 .notlight {
-  @apply bg-gradient-to-bl from-black via-indigo-900 to-fuchsia-900;
+  @apply dark:bg-gradient-to-bl dark:from-black dark:via-blue-900 dark:to-black;
 }
 
 .box {
-  @apply bg-opacity-25 bg-white bg-clip-padding backdrop-filter backdrop-blur-md p-10 flex justify-center items-center rounded-2xl shadow-xl min-w-[300px] min-h-[150px] gap-2;
+  @apply bg-opacity-25 bg-white dark:bg-black/25 bg-clip-padding backdrop-filter backdrop-blur-md p-10 flex justify-center items-center rounded-2xl shadow-xl min-w-[300px] min-h-[150px] gap-2;
 }
 
 .text-square {
-  @apply bg-neutral-600 text-neutral-100 text-3xl opacity-90;
+  @apply bg-neutral-600 text-neutral-100 text-3xl opacity-90 dark:text-neutral-600 dark:bg-neutral-100
+  duration-100 transform;
 }
 
 .optbutton {
-  @apply flex flex-row items-center justify-center w-full px-1 py-1 text-sm font-medium bg-blue-200 leading-6 duration-100 transform rounded-xl shadow cursor-pointer focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50 focus:outline-none sm:mb-0 sm:w-auto sm:mr-4 md:pl-8 md:pr-6 xl:pl-12 xl:pr-10   hover:shadow-lg hover:-translate-y-1;
+  @apply flex flex-row items-center justify-center w-full px-1 py-1 text-sm font-medium bg-blue-200 leading-6 duration-100 transform rounded-xl shadow cursor-pointer focus:ring-4 focus:ring-white focus:ring-opacity-50 focus:outline-none sm:mb-0 sm:w-auto sm:mr-4 md:pl-8 md:pr-6 xl:pl-12 xl:pr-10  dark:text-neutral-700 dark:bg-neutral-200/90 hover:shadow-lg hover:-translate-y-1;
+}
+
+.animedia {
+  @apply duration-100 transform hover:-translate-y-1;
 }
