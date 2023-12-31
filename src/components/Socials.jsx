@@ -20,21 +20,21 @@ export default function Socials(prop){
       
       return(
             <motion.div ref={ref}  className="box"
-                        variants={animation.leftVariant}
+                        variants={animation.rightVariant}
                         initial='hidden'
                         animate={mainControls}
                         transition={{duration: 1, delay: 0.25 }}
                         >
                         <ul className="flex gap-4 justify-center">
-                              <li>
+                              <motion.li whileHover={{scale: 1.15}}>
                                     <Instagram color={prop.mode} size="50px" />
-                              </li>
-                              <li>
+                              </motion.li>
+                              <motion.li whileHover={{scale: 1.15}}>
                                     <Github color={prop.mode} size="50px" />
-                              </li>
-                              <li>
+                              </motion.li>
+                              <motion.li whileHover={{scale: 1.15}}>
                                     <Linkedin color={prop.mode} size="50px" />
-                              </li>
+                              </motion.li>
                         </ul>
             </motion.div>
       );

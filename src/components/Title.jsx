@@ -25,9 +25,20 @@ export default function Title(prop){
           animate={mainControls}
         
         >
-            <button onClick={prop.modeFun} className="absolute top-10 right-10">
-              {prop.mode ? <Sun size="50px" /> : <Moon size="50px" />}
-            </button>
+<motion.button
+      onClick={prop.modeFun}
+      className="absolute top-10 right-10"
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.9 }}
+    >
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        {prop.mode ? <Sun size="50px" /> : <Moon size="50px" />}
+      </motion.div>
+    </motion.button>
             <div>
               <p className="text-3xl mb-4">Hi, I am </p>
               <h1 className="font-medium text-9xl mb-10">majkeloess</h1>

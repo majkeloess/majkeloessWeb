@@ -17,7 +17,7 @@ export default function AboutTextSecond(prop){
       
       return(
             <motion.div ref={ref}  className="box col-span-2"
-                        variants={animation.middleVariant}
+                        variants={animation.leftVariant}
                         initial='hidden'
                         animate={mainControls}
                         transition={{duration: 1, delay: 0.25 }}

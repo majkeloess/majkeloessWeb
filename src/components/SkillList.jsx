@@ -32,33 +32,33 @@ export default function SkillList(prop){
                         transition={{duration: 1, delay: 0.25 }}
                         >
                              <ul className="flex flex-row gap-3">
-                                    <li>
+                                    <motion.li whileHover={{scale: 1.25}}>
                                           <Html color={prop.mode} size="50px" />
-                                    </li>
-                                    <li>
+                                    </motion.li>
+                                    <motion.li whileHover={{scale: 1.25}} >
                                           <Css color={prop.mode} size="50px" />
-                                    </li>
-                                    <li>
+                                    </motion.li>
+                                    <motion.li whileHover={{scale: 1.25}} >
                                           <Tailwind color={prop.mode} size="50px" />
-                                    </li>
-                                    <li>
+                                    </motion.li>
+                                    <motion.li whileHover={{scale: 1.25}} >
                                           <Javascript color={prop.mode} size="50px" />
-                                    </li>
-                                    <li>
+                                    </motion.li>
+                                    <motion.li whileHover={{scale: 1.25}} >
                                           <Typescript color={prop.mode} size="50px" />
-                                    </li>
-                                    <li>
+                                    </motion.li>
+                                    <motion.li whileHover={{scale: 1.25}} >
                                           <React color={prop.mode} size="50px" />
-                                    </li>
-                                    <li>
+                                    </motion.li>
+                                    <motion.li whileHover={{scale: 1.25}} >
                                           <Node color={prop.mode} size="50px" />
-                                    </li>
-                                    <li>
+                                    </motion.li>
+                                    <motion.li whileHover={{scale: 1.25}} >
                                           <Express color={prop.mode} size="50px" />
-                                    </li>
-                                    <li>
+                                    </motion.li>
+                                    <motion.li whileHover={{scale: 1.25}} >
                                           <Mongodb color={prop.mode} size="50px" />
-                                    </li>
+                                    </motion.li>
                               </ul> 
             </motion.div>
       );

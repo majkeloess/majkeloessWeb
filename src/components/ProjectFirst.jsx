@@ -17,7 +17,7 @@ export default function ProjectFirst(prop){
       
       return(
             <motion.div ref={ref}  className="box col-span-2"
-                        variants={animation.leftVariant}
+                        variants={animation.middleVariant}
                         initial='hidden'
                         animate={mainControls}
                         transition={{duration: 1, delay: 0.25 }}

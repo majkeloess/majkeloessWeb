@@ -42,7 +42,7 @@ function Home() {
   return (
   <BrowserRouter>
   
-  <div className={`${darkMode && "dark"}`}>
+  <div className={`${darkMode && "dark"} overflow-x-hidden`}>
     <div className="light notlight text-neutral-600/90 dark:text-neutral-200/90">
       <div className="flex justify-center py-8">
         <div className="grid grid-cols-3 grid-rows-6 gap-16 max-w-[1000px]">
