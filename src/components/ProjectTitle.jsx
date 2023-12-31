@@ -16,7 +16,7 @@ export default function ProjectTitle(prop){
 
       
       return(
-            <motion.div ref={ref} id="projects" className="box text-7xl font-medium"
+            <motion.div ref={ref} id="projects" className="box text-7xl font-medium xs:text-6xl"
                         variants={animation.leftVariant}
                         initial='hidden'
                         animate={mainControls}

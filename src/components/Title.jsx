@@ -27,7 +27,7 @@ export default function Title(prop){
         >
 <motion.button
       onClick={prop.modeFun}
-      className="absolute top-10 right-10"
+      className="absolute top-10 right-10 xs:top-5 xs:right-5"
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
     >
@@ -36,13 +36,13 @@ export default function Title(prop){
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        {prop.mode ? <Sun size="50px" /> : <Moon size="50px" />}
+        {prop.mode ? <Sun size="25px" /> : <Moon size="25px" />}
       </motion.div>
     </motion.button>
-            <div>
-              <p className="text-3xl mb-4">Hi, I am </p>
-              <h1 className="font-medium text-9xl mb-10">majkeloess</h1>
-              <p className="text-3xl mb-4 leading-10">
+            <div className="xs:flex xs:justify-center xs:flex-col xs:pt-12">
+              <p className="text-3xl mb-4 xs:text-xl">Hi, I am </p>
+              <h1 className="font-medium text-9xl xs:text-5xl mb-10">majkeloess</h1>
+              <p className="text-3xl mb-4 leading-10 xs:text-xl">
                 I'm a Computer Science student with a passion for{" "}
                 <span className="text-square">webDevelopment</span>. To know
                 more about me, check out the{" "}

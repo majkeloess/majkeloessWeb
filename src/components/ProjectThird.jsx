@@ -24,7 +24,7 @@ export default function ProjectThird(prop){
                         >
                         <div>
                               <h1 className="text-3xl font-medium mb-4">simpleCalculator</h1>
-                              <p className="mb-4 text-xl">
+                              <p className="mb-4 text-xl xs:text-lg">
                                     My first project after completing FrontendMasters Bootcamp in
                                     which, I was testing my HTML, CSS & JS skills.
                               </p>

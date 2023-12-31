@@ -16,7 +16,7 @@ export default function AboutTextFirst(prop){
 
       
       return(
-            <motion.div ref={ref} className="box col-span-2 row-span-2 text-2xl"
+            <motion.div ref={ref} className="box col-span-2 row-span-2 text-2xl xs:text-lg"
                         variants={animation.rightVariant}
                         initial='hidden'
                         animate={mainControls}

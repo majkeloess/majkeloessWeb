@@ -16,7 +16,7 @@ export default function Image(prop){
 
       
       return(
-            <motion.div ref={ref}  className="box row-span-2 bg-[url('src/img/sigma.jpg')] bg-cover"
+            <motion.div ref={ref}  className="box row-span-2 bg-[url('src/img/sigma.jpg')] xs:min-h-[400px] bg-cover"
                         variants={animation.rightVariant}
                         initial='hidden'
                         animate={mainControls}

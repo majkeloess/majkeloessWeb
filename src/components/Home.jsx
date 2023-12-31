@@ -1,6 +1,6 @@
-import { useEffect, useState, useRef } from "react";
+import { useState} from "react";
 import { BrowserRouter } from "react-router-dom";
-import { motion, useAnimation, useInView } from "framer-motion";
+
 import Footer from "./Footer.jsx";;
 import React from "../assets/React";
 import Title from "./Title.jsx";
@@ -18,6 +18,8 @@ import ProjectFirst from "./ProjectFirst.jsx";
 import ProjectSecond from "./ProjectSecond.jsx";
 import ProjectThird from "./ProjectThird.jsx";
 
+//TODO: zmniejszyć footer, texty, ksiezyc/slonce, przyciski te co są przy projektach
+
 
 function Home() {
 
@@ -29,28 +31,18 @@ function Home() {
   const ListConditon = darkMode ? "white" : "black";
   const BackgroundConditon = darkMode ? "black" : "white";
   
-  const ref = useRef(null);
-  const isInView = useInView(ref, {once: true});
-  const mainControls = useAnimation();
-
-  useEffect(() => {
-    if(isInView){
-      mainControls.start("visible");
-    }
-  }, [isInView]);
-
   return (
   <BrowserRouter>
   
   <div className={`${darkMode && "dark"} overflow-x-hidden`}>
     <div className="light notlight text-neutral-600/90 dark:text-neutral-200/90">
       <div className="flex justify-center py-8">
-        <div className="grid grid-cols-3 grid-rows-6 gap-16 max-w-[1000px]">
+        <div className="grid grid-cols-3 grid-rows-6 gap-16 xs:gap-8 max-w-[1000px] xs:max-w-[400px] xs:flex xs:flex-col">
           <Title mode={darkMode} modeFun={changeMode} />
           <AboutTitle />
           <AboutTextFirst />
           <CubeBox />
-          <SkillList mode={ListConditon} />
+          <SkillList mode={ListConditon}  />
           <AboutTextSecond />
           <Image />
           <Spotify />

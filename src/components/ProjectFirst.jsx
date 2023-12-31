@@ -24,7 +24,7 @@ export default function ProjectFirst(prop){
                         >
                              <div>
                                     <h1 className="text-3xl font-medium mb-4">myWebpage v1.0</h1>
-                                    <p className="mb-4 text-xl">
+                                    <p className="mb-4 text-xl xs:text-lg">
                                           I created this page to test my ability to design responsive
                                           layouts and implement features that I could use in the future,
                                           but it wasn't sufficient.

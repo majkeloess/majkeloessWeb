@@ -16,13 +16,13 @@ export default function AboutTextSecond(prop){
 
       
       return(
-            <motion.div ref={ref}  className="box col-span-2"
+            <motion.div ref={ref}  className="box col-span-2 "
                         variants={animation.leftVariant}
                         initial='hidden'
                         animate={mainControls}
                         transition={{duration: 1, delay: 0.25 }}
                         >
-                              <p className="text-2xl">
+                              <p className="text-2xl xs:text-lg">
                                     I like to play and watch football, my favorite player is
                                     Cristiano Ronaldo. Currently, my passion lies in running and
                                     working out at the gym. This year, I accomplished 

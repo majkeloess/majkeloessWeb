@@ -17,16 +17,15 @@
 }
 
 .box {
-  @apply bg-opacity-25 bg-white dark:bg-black/25 bg-clip-padding backdrop-filter backdrop-blur-md p-10 flex justify-center items-center rounded-2xl shadow-xl min-w-[300px] min-h-[150px] gap-2;
+  @apply bg-opacity-25 bg-white dark:bg-black/25 bg-clip-padding backdrop-filter backdrop-blur-md xs:p-8 p-10 flex justify-center items-center rounded-2xl shadow-xl min-w-[300px] min-h-[150px] xs:max-w-[300px] gap-2;
 }
 
 .text-square {
-  @apply bg-neutral-600 text-neutral-100 text-3xl opacity-90 dark:text-neutral-600 dark:bg-neutral-100
-  duration-100 transform;
+  @apply bg-neutral-600 text-neutral-100 text-3xl xs:text-2xl opacity-90 dark:text-neutral-600 dark:bg-neutral-100;
 }
 
 .optbutton {
-  @apply flex flex-row items-center justify-center w-full px-1 py-1 text-sm font-medium bg-blue-200 leading-6 duration-100 transform rounded-xl shadow cursor-pointer focus:ring-4 focus:ring-white focus:ring-opacity-50 focus:outline-none sm:mb-0 sm:w-auto sm:mr-4 md:pl-8 md:pr-6 xl:pl-12 xl:pr-10  dark:text-neutral-700 dark:bg-neutral-200/90 hover:shadow-lg hover:-translate-y-1;
+  @apply flex flex-row items-center justify-center w-full px-1 py-1 text-sm xs:text-lg font-medium bg-blue-200 leading-6 duration-100 transform rounded-xl shadow cursor-pointer focus:ring-4 focus:ring-white focus:ring-opacity-50 focus:outline-none sm:mb-0 sm:w-auto sm:mr-4 md:pl-8 md:pr-6 xl:pl-12 xl:pr-10  dark:text-neutral-700 dark:bg-neutral-200/90 hover:shadow-lg hover:-translate-y-1;
 }
 
 .animedia {

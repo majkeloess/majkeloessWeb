@@ -24,7 +24,7 @@ export default function ProjectSecond(prop){
                         >
                         <div>
                               <h1 className="text-3xl font-medium mb-4">wordleGame</h1>
-                              <p className="mb-4 text-xl">
+                              <p className="mb-4 text-xl xs:text-lg" >
                                     The project required me to test my skills in retrieving and
                                     posting data to an API, predominantly using JavaScript (JS)
                                     with some CSS involvement.

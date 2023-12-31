@@ -16,7 +16,7 @@ export default function AboutTitle(prop){
 
       
       return(
-            <motion.div ref={ref} id="about" className="box text-7xl font-medium"
+            <motion.div ref={ref} id="about" className="box text-7xl font-medium xs:text-6xl"
                         variants={animation.leftVariant}
                         initial='hidden'
                         animate={mainControls}
