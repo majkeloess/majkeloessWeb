@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import animation from "../content/animationTypes";
 
@@ -14,9 +14,15 @@ export default function Image(prop){
       }
       }, [isInView]);
 
+      const [isFlipped, setIsFlipped] = useState(false);
+
+      function changeCard(){
+            setIsFlipped(!isFlipped);
+      }
+
       
       return(
-            <motion.div ref={ref}  className="box row-span-2 bg-[url('src/img/sigma.jpg')] xs:min-h-[400px] bg-cover"
+            <motion.div ref={ref} onClick={changeCard}  className="box row-span-2 bg-[url('src/img/sigma.jpg')] xs:min-h-[400px] bg-cover"
                         variants={animation.rightVariant}
                         initial='hidden'
                         animate={mainControls}

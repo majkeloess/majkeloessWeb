@@ -22,7 +22,7 @@ export default function Spotify(prop){
                         animate={mainControls}
                         transition={{duration: 1, delay: 0.25 }}
                         >
-                        [Spotify Frame]
+                              [Spotify Frame]
             </motion.div>
       );
 }
