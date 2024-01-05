@@ -17,11 +17,8 @@ import Socials from "./Socials.jsx";
 import ProjectFirst from "./ProjectFirst.jsx";
 import ProjectSecond from "./ProjectSecond.jsx";
 import ProjectThird from "./ProjectThird.jsx";
-import Homebut from "../assets/HomeBut.jsx";
 import Comeback from "./Comeback.jsx";
 import ProjectFourth from "./ProjectFourth.jsx";
-
-//TODO: zmniejszyć footer, texty, ksiezyc/slonce, przyciski te co są przy projektach
 
 
 function Home() {
@@ -36,8 +33,7 @@ function Home() {
   
   return (
   <BrowserRouter>
-  
-  <div className={`${darkMode && "dark"} overflow-x-hidden`}>
+  <div className={`${darkMode && "dark"} overflow-x-hidden `}>
     <div className="light notlight text-neutral-600/90 dark:text-neutral-200/90">
       <div className="flex justify-center py-8 gap-4">
         <div className="grid grid-cols-3 grid-rows-6 gap-16 xs:gap-8 max-w-[1000px] xs:max-w-[400px] xs:flex xs:flex-col">
@@ -61,7 +57,6 @@ function Home() {
         <Comeback mode={ListConditon} />
       </div>
       <Footer />
-
     </div>
   </div>
   </BrowserRouter>
