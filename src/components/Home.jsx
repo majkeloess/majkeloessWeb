@@ -23,7 +23,7 @@ import ProjectFourth from "./ProjectFourth.jsx";
 
 function Home() {
 
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   
   function changeMode() {
     setDarkMode(!darkMode);
@@ -43,10 +43,9 @@ function Home() {
           <CubeBox />
           <SkillList mode={ListConditon}  />
           <AboutTextSecond />
-          <Image />
-          <Spotify />
-          <Records />
           <Socials  mode={ListConditon}/>
+          <Records />
+          <Image />
 
           <ProjectTitle />
           <ProjectFirst />

@@ -22,13 +22,8 @@ export default function AboutTextSecond(prop){
                         animate={mainControls}
                         transition={{duration: 1, delay: 0.25 }}
                         >
-                              <p className="text-2xl xs:text-lg">
-                                    I like to play and watch football, my favorite player is
-                                    Cristiano Ronaldo. Currently, my passion lies in running and
-                                    working out at the gym. This year, I accomplished 
-                                    an ultramarathon (58km with elevations of 1300m). In the upcoming
-                                    year, I plan to challenge myself and attempt to surpass my
-                                    previous records.
+                              <p className="text-xl xs:text-lg">
+                              Currently, I am expanding my skills by learning new technologies. Additionally, I am attempting to create something useful to observe various environments. I am developing this page from scratch and have deployed it on my own server (using DigitalOcean and Nginx) to see how everything appears.
                               </p>
             </motion.div>
       );

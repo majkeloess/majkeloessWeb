@@ -29,7 +29,7 @@ export default function Image(prop){
 
       
       return(
-            <motion.div ref={ref}  className=" row-span-2 xs:min-h-[400px] p-0 m-0 rounded-2xl shadow-xl min-w-[300px] min-h-[150px] bg-white/25 dark:bg-black/25 bg-clip-padding backdrop-filter backdrop-blur-md"
+            <motion.div ref={ref}  className=" row-span-1 xs:min-h-[400px] p-0 m-0 rounded-2xl shadow-xl min-w-[300px] min-h-[400px] bg-white/25 dark:bg-black/25 bg-clip-padding backdrop-filter backdrop-blur-md"
                         variants={animation.rightVariant}
                         initial='hidden'
                         animate={mainControls}

@@ -27,8 +27,7 @@ export default function AboutTextFirst(prop){
                               and Technology. At the university, I am focusing on technologies
                               such as C/C++. About half a year ago, I ventured into web
                               development, delving into technologies like HTML, CSS, Tailwind
-                              CSS, JavaScript, and React. Presently, I am expanding my skills
-                              by learning TypeScript, Node.js, and Express.
+                              CSS, JavaScript, and React.
                               </p>
             </motion.div>
       );
