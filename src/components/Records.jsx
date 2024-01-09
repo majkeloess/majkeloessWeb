@@ -30,7 +30,7 @@ export default function Records(prop){
                                     year, I plan to challenge myself and attempt to surpass my
                                     previous records.
                         </p>
-                         <ul className="self-end">
+                         <ul className="self-end xs:self-center">
                               <li className="text-xl"><span className="font-bold">5K</span> 19'36''</li>
                               <li className="text-xl"><span className="font-bold">10K</span> 41'52''</li>
                               <li className="text-xl"><span className="font-bold">Half Marathon</span> 1h 38'17''</li>
