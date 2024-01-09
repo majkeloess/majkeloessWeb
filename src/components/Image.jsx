@@ -1,10 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import animation from "../content/animationTypes";
-import main from "../img/sigma.jpg"
-import second from "../img/photo.jpeg"
+
 
 export default function Image(prop){
+
+      const main = 'https://res.cloudinary.com/dq5exroyd/image/upload/v1704822413/blkd0pseufpvy8hmaxni.jpg';
+      const second ='https://res.cloudinary.com/dq5exroyd/image/upload/v1704822413/eanooakqk9iakl9ezxwo.jpg';
 
       const ref = useRef(null);
       const isInView = useInView(ref, {once: true});

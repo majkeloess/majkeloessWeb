@@ -28,17 +28,17 @@ function Cube() {
     mesh.current.rotation.z += delta * 0.15;
   });
 
-  const texture_1 = useLoader(TextureLoader, "/src/img/1.jpeg");
+  const texture_1 = useLoader(TextureLoader, "https://res.cloudinary.com/dq5exroyd/image/upload/v1704822316/v9rqey4vezontt9d4ada.jpg");
 
-  const texture_2 = useLoader(TextureLoader, "/src/img/2.jpeg");
+  const texture_2 = useLoader(TextureLoader, "https://res.cloudinary.com/dq5exroyd/image/upload/v1704822316/kdsgu2opsbnhkedkl1zr.jpg");
 
-  const texture_3 = useLoader(TextureLoader, "/src/img/3.jpeg");
+  const texture_3 = useLoader(TextureLoader, "https://res.cloudinary.com/dq5exroyd/image/upload/v1704822315/doj15kinat9wkh4ogkn6.jpg");
 
-  const texture_4 = useLoader(TextureLoader, "/src/img/4.jpeg");
+  const texture_4 = useLoader(TextureLoader, "https://res.cloudinary.com/dq5exroyd/image/upload/v1704822315/qosp7uasxp8bapc30sbp.jpg");
 
-  const texture_5 = useLoader(TextureLoader, "/src/img/5.jpeg");
+  const texture_5 = useLoader(TextureLoader, "https://res.cloudinary.com/dq5exroyd/image/upload/v1704822315/rjcpgek8sr1j18o06ufk.jpg");
 
-  const texture_6 = useLoader(TextureLoader, "/src/img/6.jpeg");
+  const texture_6 = useLoader(TextureLoader, "https://res.cloudinary.com/dq5exroyd/image/upload/v1704822315/lutmkkrqwvuurju9dl2x.jpg");
 
   return (
     <mesh ref={mesh}>

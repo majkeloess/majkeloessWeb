@@ -45,8 +45,7 @@ function Home() {
           <AboutTextSecond />
           <Socials  mode={ListConditon}/>
           <Records />
-          <Image />
-
+          <Image /> 
           <ProjectTitle />
           <ProjectFirst />
           <ProjectSecond />
