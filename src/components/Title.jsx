@@ -27,6 +27,7 @@ export default function Title(prop){
         >
 <motion.button
       onClick={prop.modeFun}
+      aria-label="Site mode"
       className="absolute top-10 right-10 xs:top-5 xs:right-5"
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}

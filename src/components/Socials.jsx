@@ -26,13 +26,13 @@ export default function Socials(prop){
                         transition={{duration: 1, delay: 0.25 }}
                         >
                         <ul className="flex gap-4 justify-center">
-                              <motion.li whileHover={{scale: 1.15}}>
+                              <motion.li whileHover={{scale: 1.15}} aria-label='Instagram'>
                                     <Instagram color={prop.mode} size="50px" />
                               </motion.li>
-                              <motion.li whileHover={{scale: 1.15}}>
+                              <motion.li whileHover={{scale: 1.15}} aria-label="GitHub">
                                     <Github color={prop.mode} size="50px" />
                               </motion.li>
-                              <motion.li whileHover={{scale: 1.15}}>
+                              <motion.li whileHover={{scale: 1.15}} aria-label="Linkedin">
                                     <Linkedin color={prop.mode} size="50px" />
                               </motion.li>
                         </ul>
