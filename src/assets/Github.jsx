@@ -1,6 +1,6 @@
 export default function Github(prop) {
   return (
-    <a target="_blank" href="https://github.com/majkeloess">
+    <a target="_blank" aria-label="GitHub" href="https://github.com/majkeloess">
       <svg
         className="animedia"
         fill={prop.color}

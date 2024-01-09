@@ -1,6 +1,6 @@
 export default function Linkedin(prop) {
   return (
-    <a target="_blank" href="https://www.linkedin.com/in/majkeloess/">
+    <a target="_blank" aria-label="Linkedin" href="https://www.linkedin.com/in/majkeloess/">
       <svg
         
         className="animedia"
