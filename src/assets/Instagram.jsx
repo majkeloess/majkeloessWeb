@@ -1,7 +1,11 @@
 export default function Instagram(prop) {
   return (
-    <a target="_blank" aria-label='Instagram' href="https://www.instagram.com/majkeloess/">
-      <svg 
+    <a
+      target="_blank"
+      aria-label="Instagram"
+      href="https://www.instagram.com/majkeloess/"
+    >
+      <svg
         className="animedia"
         fill={prop.color}
         xmlns="http://www.w3.org/2000/svg"

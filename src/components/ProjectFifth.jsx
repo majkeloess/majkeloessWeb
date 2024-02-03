@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import animation from "../content/animationTypes";
 
-export default function ProjectFirst(prop) {
+export default function ProjectFifth() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
@@ -16,25 +16,26 @@ export default function ProjectFirst(prop) {
   return (
     <motion.div
       ref={ref}
-      className="box col-span-2"
+      className="box col-span-3"
       variants={animation.middleVariant}
       initial="hidden"
       animate={mainControls}
       transition={{ duration: 1, delay: 0.25 }}
     >
       <div>
-        <h1 className="text-3xl font-medium mb-4">myWebpage v1.0</h1>
+        <h1 className="text-3xl font-medium mb-4">weatherApp</h1>
         <p className="mb-4 text-xl xs:text-lg">
-          I created this page to test my ability to design responsive layouts
-          and implement features that I could use in the future, but it wasn't
-          sufficient.
+          The main goal of the project was to develop a user-friendly weather
+          application. This initiative aimed to enhance my understanding of
+          manipulating JSON objects derived from REST APIs, and also provided an
+          opportunity to explore the functionalities of Postman.
         </p>
         <ul className="flex flex-row justify-end gap-5">
           <li>
             <a
               target="_blank"
               className="optbutton"
-              href="https://github.com/majkeloess/myWebpage"
+              href="https://github.com/majkeloess/weatherApp"
             >
               GitHub repo
             </a>
@@ -43,7 +44,7 @@ export default function ProjectFirst(prop) {
             <a
               target="_blank"
               className="optbutton"
-              href="https://majkeloes.studio/"
+              href="https://majkeloess.dev/weatherApp"
             >
               Project page
             </a>
