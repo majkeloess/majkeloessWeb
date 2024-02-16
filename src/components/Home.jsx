@@ -19,6 +19,7 @@ import ProjectThird from "./ProjectThird.jsx";
 import Comeback from "./Comeback.jsx";
 import ProjectFourth from "./ProjectFourth.jsx";
 import ProjectFifth from "./ProjectFifth.jsx";
+import ProjectSixth from "./ProjectSixth.jsx";
 
 function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -50,6 +51,7 @@ function Home() {
               <ProjectThird />
               <ProjectFourth />
               <ProjectFifth />
+              <ProjectSixth />
             </div>
             <Comeback mode={ListConditon} />
           </div>
