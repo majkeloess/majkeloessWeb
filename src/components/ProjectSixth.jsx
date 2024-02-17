@@ -47,7 +47,7 @@ export default function ProjectSixth() {
             <a
               target="_blank"
               className="optbutton"
-              href="https://majkeloess.dev/nobelPrize"
+              href="https://majkeloess.github.io/nobelPrize/"
             >
               Project page
             </a>
